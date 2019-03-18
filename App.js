@@ -1,49 +1,85 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React, { Component } from "react";
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import { Text, View, StyleSheet, TextInput, Button, Alert } from "react-native";
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
+export default class UserLogin extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      username: '',
+      password: '',
+      loaded: false
+    }
+  }
+  onLogin () {
+    Alert.alert('登录')
+  }
+  onRegister () {
+    Alert.alert('注册')
+  }
+  render () {
+    return(
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.title}>患者问诊系统</Text>
+        <View style={styles.inputGround}>
+          <TextInput
+            keyboardType='numeric'
+            keyboardAppearance='dark'
+            placeholder='请输入手机号'
+            style={styles.textInput}
+            value={this.state.username}
+            onChangeText={(username) => this.setState({username})}
+          ></TextInput>
+          <TextInput
+            placeholder='请输入密码'
+            style={styles.textInput}
+            value={this.state.password}
+            onChangeText={(password) => this.setState({password})}
+          ></TextInput>
+        </View>
+        <View>
+          <Button
+            onPress={this.onLogin}
+            style={styles.button}
+            title="登录"
+            color="#334f8d"
+            accessibilityLabel="用户登录系统的按钮"
+          />
+          <Button
+            onPress={this.onRegister}
+            style={styles.button}
+            title="注册"
+            color="#334f8d"
+            accessibilityLabel="用户注册的按钮"
+          />
+        </View>
       </View>
-    );
+    )
   }
 }
 
-const styles = StyleSheet.create({
+var styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    justifyContent: 'space-between'
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  title: {
+    fontSize: 30,
+    flex: 1
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  inputGround: {
+    flex: 1,
+    alignItems: 'center'
   },
-});
+  textInput: {
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgb(224, 224, 224)',
+    width: 300,
+    height: 50
+  },
+  button: {
+    flex: 1
+  }
+})
