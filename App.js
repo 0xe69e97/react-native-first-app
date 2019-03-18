@@ -25,14 +25,16 @@ export default class UserLogin extends Component {
         <View style={styles.inputGround}>
           <TextInput
             keyboardType='numeric'
-            keyboardAppearance='dark'
+            textContentType='username'
             placeholder='请输入手机号'
             style={styles.textInput}
             value={this.state.username}
             onChangeText={(username) => this.setState({username})}
+            maxLength={11}
           ></TextInput>
           <TextInput
             placeholder='请输入密码'
+            textContentType='password'
             style={styles.textInput}
             value={this.state.password}
             onChangeText={(password) => this.setState({password})}
