@@ -281,28 +281,44 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+<<<<<<< HEAD
 		8C926A72224085960047E5B5 /* PBXContainerItemProxy */ = {
+=======
+		8C674ECB223FCCE700ECF276 /* PBXContainerItemProxy */ = {
+>>>>>>> c5d5258f32542aec1556ced2a7705ca015a0a9c7
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EDEBC6D6214B3E7000DD5AC8;
 			remoteInfo = jsi;
 		};
+<<<<<<< HEAD
 		8C926A74224085960047E5B5 /* PBXContainerItemProxy */ = {
+=======
+		8C674ECD223FCCE700ECF276 /* PBXContainerItemProxy */ = {
+>>>>>>> c5d5258f32542aec1556ced2a7705ca015a0a9c7
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EDEBC73B214B45A300DD5AC8;
 			remoteInfo = jsiexecutor;
 		};
+<<<<<<< HEAD
 		8C926A76224085960047E5B5 /* PBXContainerItemProxy */ = {
+=======
+		8C674ECF223FCCE700ECF276 /* PBXContainerItemProxy */ = {
+>>>>>>> c5d5258f32542aec1556ced2a7705ca015a0a9c7
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = ED296FB6214C9A0900B7C4FE;
 			remoteInfo = "jsi-tvOS";
 		};
+<<<<<<< HEAD
 		8C926A78224085960047E5B5 /* PBXContainerItemProxy */ = {
+=======
+		8C674ED1223FCCE700ECF276 /* PBXContainerItemProxy */ = {
+>>>>>>> c5d5258f32542aec1556ced2a7705ca015a0a9c7
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
@@ -513,10 +529,17 @@
 				2DF0FFE52056DD460020B375 /* libthird-party.a */,
 				2DF0FFE72056DD460020B375 /* libdouble-conversion.a */,
 				2DF0FFE92056DD460020B375 /* libdouble-conversion.a */,
+<<<<<<< HEAD
 				8C926A73224085960047E5B5 /* libjsi.a */,
 				8C926A75224085960047E5B5 /* libjsiexecutor.a */,
 				8C926A77224085960047E5B5 /* libjsi-tvOS.a */,
 				8C926A79224085960047E5B5 /* libjsiexecutor-tvOS.a */,
+=======
+				8C674ECC223FCCE700ECF276 /* libjsi.a */,
+				8C674ECE223FCCE700ECF276 /* libjsiexecutor.a */,
+				8C674ED0223FCCE700ECF276 /* libjsi-tvOS.a */,
+				8C674ED2223FCCE700ECF276 /* libjsiexecutor-tvOS.a */,
+>>>>>>> c5d5258f32542aec1556ced2a7705ca015a0a9c7
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1009,6 +1032,7 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+<<<<<<< HEAD
 		8C926A73224085960047E5B5 /* libjsi.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1035,6 +1059,34 @@
 			fileType = archive.ar;
 			path = "libjsiexecutor-tvOS.a";
 			remoteRef = 8C926A78224085960047E5B5 /* PBXContainerItemProxy */;
+=======
+		8C674ECC223FCCE700ECF276 /* libjsi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsi.a;
+			remoteRef = 8C674ECB223FCCE700ECF276 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8C674ECE223FCCE700ECF276 /* libjsiexecutor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsiexecutor.a;
+			remoteRef = 8C674ECD223FCCE700ECF276 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8C674ED0223FCCE700ECF276 /* libjsi-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsi-tvOS.a";
+			remoteRef = 8C674ECF223FCCE700ECF276 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8C674ED2223FCCE700ECF276 /* libjsiexecutor-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsiexecutor-tvOS.a";
+			remoteRef = 8C674ED1223FCCE700ECF276 /* PBXContainerItemProxy */;
+>>>>>>> c5d5258f32542aec1556ced2a7705ca015a0a9c7
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */ = {
@@ -1228,7 +1280,11 @@
 					"-ObjC",
 					"-lc++",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = smalin;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = smalinTest;
+>>>>>>> c5d5258f32542aec1556ced2a7705ca015a0a9c7
 				PRODUCT_NAME = AwesomeProject;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1248,7 +1304,11 @@
 					"-ObjC",
 					"-lc++",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = smalin;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = smalinTest;
+>>>>>>> c5d5258f32542aec1556ced2a7705ca015a0a9c7
 				PRODUCT_NAME = AwesomeProject;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
